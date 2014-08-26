@@ -1,0 +1,15 @@
+extends layout
+block content
+	include header
+	div.public_layout
+		div.wrapper
+			div.tiger
+			div.about_nav
+				a.about1.about_link(href='/about1') 企业简介
+				a.about2.about_link(href='/about2') 品牌由来
+				a.about3.about_link(href='/about3') 产品特色
+				a.about4.cur.about_link(href='/about4') 产品标准
+			div.content_area
+				img.content_img(src='/images/about4.jpg')
+		div.trees
+	include footer

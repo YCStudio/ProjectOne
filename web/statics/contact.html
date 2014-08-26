@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>超级大薯条</title>
+    <meta>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/contact.css">
+    <script type="text/javascript" src="./javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascripts/contact.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrapper"><img src="./images/logo.png" class="logo">
+        <div class="lights"></div>
+        <div class="social_box"><a class="weibo_link"></a><a class="weixin_link"></a><img src="./images/qrCode.jpg" class="qrCode"></div>
+        <ul class="nav">
+          <li><a href="./index.html" class="menu_link ">首页</a></li>
+          <li><a href="./products.html" class="menu_link">系列产品</a></li>
+          <li><a href="./join1.html" class="menu_link">招商加盟</a></li>
+          <li><a href="./news.html" class="menu_link">最新资讯</a></li>
+          <li><a href="./about1.html" class="menu_link">关于我们</a></li>
+          <li><a href="./contact.html" class="menu_link cur">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="public_layout">
+      <div class="wrapper">
+        <div class="tiger"></div>
+        <div class="join_nav"><a href="./news" class="join1 cur join_link">联系我们</a></div>
+        <div class="content_area">
+          <div id="l-map"></div>
+        </div>
+      </div>
+      <div class="trees"></div>
+    </div>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=sqK0y3qDpMc6RL0OFcARCiRH"></script>
+    <script>
+      var sContent =
+      '<div style="margin:0;line-height:1.8;font-size:14px;color:#626776;">'+
+       '<p style="color:#f00; font-weight:bold;">★超级大薯条加盟总部★</p>'+
+       '<p>全国免费热线400-112-6696,021-34681161,021-62834187</p>'+
+       '<p>地址：上海市普陀区金沙江路1340弄</p>'+
+       '<p>曹阳高新技术经济发展园区B11 超级大薯条加盟总部</p>'+
+      '</div>';
+      var map = new BMap.Map("l-map");
+      var point = new BMap.Point(121.393896,31.23982);
+      map.centerAndZoom(point, 15);
+      var infoWindow = new BMap.InfoWindow(sContent);
+      var marker = new BMap.Marker(point);
+      
+      map.addOverlay(marker);
+      map.openInfoWindow(infoWindow,point); 
+    </script>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="content"><span class="con_txt">中国国务院备案号沪ICP13011423  版权所有@上海博庭投资管理服务中心</span><span class="con_txt">全国免费热线  400-112-6696   021-34681159 021-34681161</span><span class="con_txt">地址：上海市普陀区金沙江路1340弄  曹阳高新技术经济发展园区B11</span></div>
+        <div class="v_pic"></div>
+      </div>
+    </div>
+  </body>
+</html>

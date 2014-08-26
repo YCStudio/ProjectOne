@@ -1,0 +1,50 @@
+.the_pic {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.about_nav {
+  height: 402px;
+  width: 120px;
+  background: url(../images/about_nav_bg.jpg) no-repeat;
+  position: absolute;
+  top: 336px;
+  left: 24px;
+}
+.about_nav .about_link {
+  height: 80px;
+  display: block;
+  font-size: 18px;
+  color: #f4c443;
+  position: relative;
+  line-height: 35px;
+  padding-left: 40px;
+}
+.about_nav .about_link.cur {
+  color: #eb6221;
+}
+.about_nav .about_link.cur:before {
+  background-position: -244px -2px;
+  height: 36px;
+  width: 36px;
+}
+.about_nav .about_link:before {
+  content: '';
+  top: 0;
+  left: -4px;
+  position: absolute;
+  background: url(../images/sprit.png) no-repeat;
+  height: 34px;
+  width: 34px;
+  display: inline-block;
+  background-position: -244px -42px;
+}
+.content_area {
+  width: 805px;
+  text-align: left;
+  margin: 0 0 0 220px;
+}
+.content_area p {
+  font-size: 14px;
+  line-height: 36px;
+}

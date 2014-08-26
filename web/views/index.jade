@@ -1,5 +1,34 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+	include header
+	div.slider
+		div.slider_wrapper
+			img.slider_img(src='/images/index_slide_1.jpg')
+		div.slider_nav
+			div.nav_box
+	div.main
+		div.main_wrapper
+			div.news
+				div.tips.news_tip
+				a.get_more.get_more_news(href='/') 更多>>
+				ul.news_list
+					li
+						img.news_img(src='/images/test.jpg')
+						a.news_link(href='/')  2014-07-29成功经营生意的秘诀
+					li
+						img.news_img(src='/images/test.jpg')
+						a.news_link(href='/')  2014-07-22投资0门槛，收益100%超级大薯条圆您开店创业梦！
+					li
+						img.news_img(src='/images/test.jpg')
+						a.news_link(href='/')  2014-07-29成功经营生意的秘诀
+					li
+						img.news_img(src='/images/test.jpg')
+						a.news_link(href='/')  2014-07-29成功经营生意的秘诀
+			div.tel
+				a.get_more.get_more_news(href='/') 更多>>
+				div.tips.join_tip
+			div.video
+				div.tips.video_tip
+				div.click_area
+			img.media(src='/images/media.jpg')
+	include footer

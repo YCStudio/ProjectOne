@@ -1,0 +1,22 @@
+extends layout
+block content
+	include header
+	a(target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes')
+		img(border="0" SRC='http://wpa.qq.com/pa?p=2::53' alt="点击这里给我发消息" title="点击这里给我发消息")
+	div.public_layout
+		div.wrapper
+			div.tiger
+			div.join_nav
+				a.join1.cur.join_link(href='/join1') 加盟模式
+				a.join2.join_link(href='/join2') 加盟优势
+				a.join3.join_link(href='/join3') 加盟流程
+				a.join4.join_link(href='/join4') 加盟费用
+				a.join5.join_link(href='/join5') 加盟条件
+				a.join6.join_link(href='/join6') 品牌VI
+				a.join7.join_link(href='/join7') 常见问题
+			div.content_area
+				img.content_img(src='/images/join1_1.jpg')
+				img.content_img(src='/images/join1_2.jpg')
+		div.trees
+
+	include footer

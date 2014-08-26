@@ -1,0 +1,56 @@
+.the_pic {
+    position: absolute;
+    right: 47px;
+    top: -18px;
+}
+.join_nav {
+    height: 678px;
+    width: 120px;
+    background: url(../images/join_nav_bg.jpg) no-repeat;
+    position: absolute;
+    top: 336px;
+    left: 24px;
+    .join_link {
+        height: 80px;
+        display: block;
+        font-size: 18px;
+        color: #f4c443;
+        position: relative;
+        line-height: 35px;
+        padding-left: 40px;
+        &.cur{
+        	color: #eb6221;
+        	&:before{
+        		background-position: -244px -2px;
+        		height: 36px;
+            	width: 36px;
+        	};
+        }
+        &:before {
+            content: '';
+            top: 0;
+            left: -4px;
+            position: absolute;
+            background: url(../images/sprit.png) no-repeat;
+            height: 34px;
+            width: 34px;
+            display: inline-block;
+            background-position: -244px -42px;
+        }
+    }
+}
+.content_area{
+	width: 845px;
+	text-align: left;
+	margin:  -300px 0 0 176px;
+    line-height: 22px;
+    overflow: hidden;
+    h3{
+        margin-top: 20px;
+    }
+	p{
+		font-size: 12px;
+		line-height: 22px;
+        margin-top: 20px;
+	}
+}
